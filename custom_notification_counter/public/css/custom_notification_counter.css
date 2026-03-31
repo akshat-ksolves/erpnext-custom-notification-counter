@@ -1,0 +1,39 @@
+/* ── Base badge (shared) ── */
+.cnc-badge {
+    display: none;
+    position: absolute;
+    background-color: #e53e3e;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 0 0 2px var(--bg-color, #1a1a2e);
+    border-radius: 9px;
+    line-height: 16px;
+}
+
+/* ── Sidebar bell badge ──
+   Anchor: span.sidebar-item-icon (≈16×16px icon)
+   Sits top-right corner of the icon */
+.cnc-badge-sidebar {
+        top: 7px;
+    right: -147px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 3px;
+    font-size: 9px;
+}
+
+/* ── Desktop bell badge ──
+   Anchor: button.btn-reset.nav-link (≈32×32px button)
+   Sits top-right corner of the button */
+.cnc-badge-desk {
+        top: -7px;
+    right: -8px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 18px;
+}
